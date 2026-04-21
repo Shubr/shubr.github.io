@@ -8,6 +8,7 @@ import flutterIcon from '/assets/flutter.png';
 import kotlinIcon from '/assets/kotlin.png';
 import jetpackCIcon from '/assets/jetpackcompose.png';
 import firebaseIcon from '/assets/firebase.png'; 
+import hiveIcon from '/assets/hive.png';
 
 
 import Highlight from "./HighlightText";
@@ -43,6 +44,19 @@ function Projects() {
         </button>
       </div>
       <div className="card-holder" ref={cardHolderRef}>
+        <Card 
+            name="CheckMe"
+            detail="A clean, UI-focused to-do app for creating, managing, and tracking tasks with a calendar view, due dates, and
+            progress tracking. Built offline-first with real-time updates."
+          >
+            <div className="icons">
+              <img src={flutterIcon}/>
+              <img src={hiveIcon}/>
+            </div>
+            <div className="buttons">
+              <a href="https://github.com/Shubr/CheckMe" target="_blank">View Repo</a>
+            </div>
+          </Card>
         <Card 
             name="iNutrition"
             detail="A health-tracking mobile app that helps users log meals, track calories, and follow personalised nutrition goal,

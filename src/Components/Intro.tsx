@@ -1,5 +1,6 @@
 import "../App.css";
 import Highlight from "./HighlightText";
+import resume from '../../dist/assets/resume.pdf';
 
 function Intro() {
   return (
@@ -10,7 +11,7 @@ function Intro() {
         </h1>
         <p>Mobile/Web Developer</p>
         <button className="buttons cv">
-          <a href="/assets/myCV.pdf" download="Shub_CV.pdf">
+          <a href={resume} download="Shubham_Cv.pdf">
             Download CV
           </a>
         </button>
